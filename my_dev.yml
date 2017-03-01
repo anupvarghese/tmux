@@ -1,0 +1,23 @@
+# ~/.tmuxinator/my_dev.yml
+
+name: my_dev
+root: ~/
+
+windows:
+  - go:
+      layout: tiled
+      panes:
+        - playground:
+          - projects
+  - rust:
+      layout: tiled
+      panes:
+        - playground:
+          - projects
+          - cd rust
+          - docker-compose run app
+  - docker-status:
+      layout: main-vertical
+      panes:
+       - docker-status:
+          - docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"
