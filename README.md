@@ -1,6 +1,6 @@
 # tmux Config
 
-![](http://g.recordit.co/xycenOroBb.gif)
+![](http://recordit.co/OxtY4mnBW7.gif)
 
 ## Steps
 
